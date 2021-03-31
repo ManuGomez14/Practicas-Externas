@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>FORMULARIO</title>
+        <script src="formulario.js"></script>
+        <link rel="stylesheet" href="estilos.css" type="text/css" media="screen"/>
+    </head>
+    <body>
+        <h1>Registro de datos de las noticias:</h1>
+        <p>Introduce aquí los datos principales sobre una noticia: </p>
+        <div id="formulario">
+            <form>
+                <label for="fecha">Fecha:</label>
+                <input type="datetime-local" name="fecha" id="fecha">
+                <br><br>
+                <label for="titulo">Título:</label>
+                <input type="text" name="titulo" id="titulo">
+                <br><br>
+                <label for="texto">Texto:</label>
+                <br>
+                <textarea name="texto" id="texto" cols="60" rows="7"></textarea>
+                <br><br>
+                <label for="audiencia">Audiencia:</label>
+                <input type="number" name="audiencia" id="audiencia">
+                <br><br>
+                <label for="usuarios">Usuarios:</label>
+                <input type="number" name="usuarios" id="usuarios">
+                <br><br>
+                <label for="menciones">Menciones:</label>
+                <input type="number" name="menciones" id="menciones">
+                <br><br>
+                <label for="ambito">Ámbito:</label>
+                <input type="text" name="ambito" id="ambito">
+                <br><br>
+                <input type="button" value="Enviar" onclick="rellenarTabla()">
+            </form>
+        </div>
+        <br><br>
+        <div id="tabla">
+            <table>
+                <caption>Noticias:</caption>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Fecha</th>
+                        <th>Título</th>
+                        <th>Texto</th>
+                        <th>Audiencia</th>
+                        <th>Usuarios</th>
+                        <th>Menciones</th>
+                        <th>Ámbito</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </div>
+    </body>
+</html>
