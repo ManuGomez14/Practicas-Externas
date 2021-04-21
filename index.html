@@ -33,8 +33,91 @@
                 <label for="ambito">Ámbito:</label>
                 <input type="text" name="ambito" id="ambito">
                 <br><br>
-                <input type="button" value="Enviar" onclick="rellenarTabla()">
+                <label for="tematica">Temática:</label>
+                <select name="tematica" id="tematica">
+                    <option value="id_tem1">Temática 1</option>
+                    <option value="id_tem2">Temática 2</option>
+                    <option value="id_tem3">Temática 3</option>
+                </select>
+                <br><br>
+                <label for="formato">Formato:</label>
+                <select name="formato" id="formato">
+                    <option value="id_frmt1">Formato 1</option>
+                    <option value="id_frmt2">Formato 2</option>
+                    <option value="id_frmt3">Formato 3</option>
+                </select>
+                <br><br>
+                <label for="autor">Autor:</label>
+                <input type="text" name="autor" id="autor">
+                <br><br>
+                <label for="municipios">Municipios:</label>
+                <input type="text" name="municipios" id="municipios">
+                <input type="button" value="+">
+                <br><br>
+                <label for="imagenes">Imágenes:</label>
+                <input type="url" name="imagenes" id="imagenes">
+                <input type="button" value="+">
+                <br><br>
+                <label for="idVinculos">Vínculos:</label>
+                <br>
+                <label for="idVinculos">ID del vínculo:</label>
+                <input type="text" name="idVinculos" id="idVinculos">
+                <label for="tipoVinculos">Tipo de vínculo:</label>
+                <select name="tipoVinculos" id="tipoVinculos">
+                    <option value="tipo_vinc1">Tipo 1</option>
+                    <option value="tipo_vinc2">Tipo 2</option>
+                    <option value="tipo_vinc3">Tipo 3</option>
+                </select>
+                <input type="button" value="+">
+                <br><br>
+                <label for="agencias">Agencias:</label>
+                <select name="agencias" id="agencias" multiple="yes" size="3">
+                    <option value="id_agnc1">Agencia 1</option>
+                    <option value="id_agnc2">Agencia 2</option>
+                    <option value="id_agnc3">Agencia 3</option>
+                    <option value="id_agnc4">Agencia 4</option>
+                    <option value="id_agnc5">Agencia 5</option>
+                </select>
+                <br><br>
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo" onchange="mostrarSegunTipo(this.value)">
+                    <option value="Veraz">Veraz</option>
+                    <option value="Desmentido">Desmentido</option>
+                    <option value="Bulo">Bulo</option>
+                </select>
+                <br><br>
+                <div id="Veraz" class="seccion activa">
+                    <form>
+                        <input type="button" value="Enviar" onclick="rellenarTabla()">
+                    </form>
+                </div>
+                <div id="Desmentido" class="seccion">
+                    <form>
+                        <label for="fuente">Fuente:</label>
+                        <input type="text" name="fuente" />
+                        <br><br>
+                        <input type="button" value="Enviar" onclick="rellenarTabla()">
+                    </form>
+                </div>
+                <div id="Bulo" class="seccion">
+                    <form>
+                        <label for="desmentidos">Desmentidos:</label>
+                        <input type="text" name="desmentidos" id="desmentidos">
+                        <br><br>
+                        <label for="evidencias">Evidencias:</label>
+                        <input type="text" name="evidencias" id="evidencias">
+                        <br><br>
+                        <label for="naturaleza">Naturaleza:</label>
+                        <input type="text" name="naturaleza" id="naturaleza">
+                        <br><br>
+                        <label for="medios_supl">Medios Suplementarios:</label>
+                        <input type="text" name="medios_supl" id="medios_supl">
+                        <br><br>
+                        <input type="button" value="Enviar" onclick="rellenarTabla()">
+                    </form>
+                </div>
             </form>
+            
         </div>
         <br><br>
         <div id="tabla">

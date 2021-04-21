@@ -4,3 +4,6 @@ caption, th, tr, thead, tbody, table, td {
     border-width: 1px;
     text-align: center;
 }
+
+.seccion {display: none;}
+.activa {display: block;}

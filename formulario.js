@@ -1,5 +1,5 @@
 var id = 1;
-
+var seccionActual = "Veraz";
 
 function rellenarTabla(){
 
@@ -21,4 +21,22 @@ function rellenarTabla(){
     document.getElementById("menciones").value = "";
     document.getElementById("ambito").value = "";
     id++;
+}
+
+function cambiarSeccion(seccion) {
+    document.getElementById(seccionActual).classList.remove("activa");
+    document.getElementById(seccion).classList.add("activa");
+    seccionActual = seccion;
+}
+
+function mostrarSegunTipo(tipo){
+    if (tipo == "Veraz") {
+        cambiarSeccion("Veraz");
+    }
+    if (tipo == "Desmentido") {
+        cambiarSeccion("Desmentido");
+    }
+    if (tipo == "Bulo") {
+        cambiarSeccion("Bulo");
+    }
 }
