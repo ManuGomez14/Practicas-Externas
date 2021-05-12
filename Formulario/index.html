@@ -85,7 +85,7 @@
                 </select>-->
                 <br><br>
                 <label for="tipo">Tipo:</label>
-                <form id="formTipo">
+                <form id="fTipo">
                     <select name="tipo" id="tipo" onchange="mostrarSegunTipo(this.value)">
                         <option value="Veraz">Veraz</option>
                         <option value="Desmentido">Desmentido</option>
@@ -95,7 +95,7 @@
                 <br><br>
                 <div id="Veraz" class="seccion activa">
                     <form>
-                        <input type="button" value="Enviar" onclick="rellenarTabla()">
+                        <input type="button" value="Enviar" onclick="rellenarTabla(), crearObjetoJSON()">
                     </form>
                 </div>
                 <div id="Desmentido" class="seccion">
@@ -120,7 +120,7 @@
                         <label for="medios_supl">Medios Suplementarios:</label>
                         <input type="text" name="medios_supl" id="medios_supl">
                         <br><br>
-                        <input type="button" value="Enviar" onclick="rellenarTabla(), crearObjetoJSON()">
+                        <input type="button" value="Enviar" onclick="crearObjetoJSON()">
                     </form>
                 </div>
             </form>

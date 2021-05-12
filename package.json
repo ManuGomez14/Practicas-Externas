@@ -1,0 +1,30 @@
+{
+  "name": "Practicas-Externas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servidor.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jquery": "^3.6.0",
+    "lowdb": "^1.0.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "rest": "^2.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManuGomez14/Practicas-Externas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManuGomez14/Practicas-Externas/issues"
+  },
+  "homepage": "https://github.com/ManuGomez14/Practicas-Externas#readme"
+}
