@@ -1,28 +1,6 @@
 var id = 1;
 var seccionActual = "Veraz";
 
-function rellenarTabla(){
-
-    var fecha = document.getElementById("fecha").value;
-    var titulo = document.getElementById("titulo").value;
-    var texto = document.getElementById("texto").value;
-    var audiencia = document.getElementById("audiencia").value;
-    var usuarios = document.getElementById("usuarios").value;
-    var menciones = document.getElementById("menciones").value;
-    var ambito = document.getElementById("ambito").value;
-
-    tbody.innerHTML += "<tr><td>"+id+"</td><td>"+fecha+"</td><td>"+titulo+"</td><td>"+texto+"</td><td>"+audiencia+"</td><td>"+usuarios+"</td><td>"+menciones+"</td><td>"+ambito+"</td></tr>";
-
-    document.getElementById("fecha").value = "";
-    document.getElementById("titulo").value = "";
-    document.getElementById("texto").value = "";
-    document.getElementById("audiencia").value = "";
-    document.getElementById("usuarios").value = "";
-    document.getElementById("menciones").value = "";
-    document.getElementById("ambito").value = "";
-    id++;
-}
-
 function cambiarSeccion(seccion) {
     document.getElementById(seccionActual).classList.remove("activa");
     document.getElementById(seccion).classList.add("activa");
@@ -53,7 +31,8 @@ function crearObjetoJSON(){
     var tematica = document.getElementById("tematica").value;
     var formato = document.getElementById("formato").value;
     var autor = document.getElementById("autor").value;
-    var municipios = document.getElementById("municipios").value;
+    var cadenaMunicipios = document.getElementById("municipios").value;
+    var municipios = cadenaMunicipios.split(";");
     var imagenes = document.getElementById("imagenes").value;
     var idVinculos = document.getElementById("idVinculos").value;
     var tipoVinculos = document.getElementById("tipoVinculos").value;
@@ -93,7 +72,28 @@ function crearObjetoJSON(){
 
     id++;
     console.log(noticia);
-   /** nuevaNoticia(noticia); */
+    
+    rest("post","/noticia/nueva",{nueva:noticia},function(status,noticia){
+
+    })
 
 }
 
+function mas(elemento){
+    if(elemento=="municipios"){
+        masMunicipios = document.getElementById("masMunicipios");
+        masMunicipios.innerHTML += "<br><label for='municipios2'>Nuevo municipio:</label><input type='text' name='municipios' id='municipios2'><br>";
+    }
+    if(elemento=="imagenes"){
+        masImagenes = document.getElementById("masImagenes");
+        masImagenes.innerHTML += "<br><label for='imagenes2'>Nueva imagen:</label><input type='url' name='imagenes' id='imagenes2'><br>";
+    }
+    if(elemento=="vinculos"){
+        masVinculos = document.getElementById("masVinculos");
+        masVinculos.innerHTML += "<br><label for='idVinculos2'>ID del vínculo:</label><input type='text' name='idVinculos' id='idVinculos2'><label for='tipoVinculos2'>Tipo de vínculo:</label><input type='text' name='tipoVinculos' id='tipoVinculos2'><br>";
+    }
+    if(elemento=="agencias"){
+        masAgencias = document.getElementById("masAgencias");
+        masAgencias.innerHTML += "<br><label for='agencias2'>Agencias:</label><input type='text' name='agencias' id='agencias2'><br>";
+    }
+}

@@ -55,11 +55,13 @@
                 <br><br>
                 <label for="municipios">Municipios:</label>
                 <input type="text" name="municipios" id="municipios">
-                <input type="button" value="+">
+                <input type="button" value="+" onclick="mas('municipios')">
+                <div id="masMunicipios"></div>
                 <br><br>
                 <label for="imagenes">Imágenes:</label>
                 <input type="url" name="imagenes" id="imagenes">
-                <input type="button" value="+">
+                <input type="button" value="+" onclick="mas('imagenes')">
+                <div id="masImagenes"></div>
                 <br><br>
                 <label for="idVinculos">Vínculos:</label>
                 <br>
@@ -72,7 +74,8 @@
                     <option value="tipo_vinc2">Tipo 2</option>
                     <option value="tipo_vinc3">Tipo 3</option>
                 </select> -->
-                <input type="button" value="+">
+                <input type="button" value="+" onclick="mas('vinculos')">
+                <div id="masVinculos"></div>
                 <br><br>
                 <label for="agencias">Agencias:</label>
                 <input type="text" name="agencias" id="agencias">
@@ -83,6 +86,8 @@
                     <option value="id_agnc4">Agencia 4</option>
                     <option value="id_agnc5">Agencia 5</option>
                 </select>-->
+                <input type="button" value="+" onclick="mas('agencias')">
+                <div id="masAgencias"></div>
                 <br><br>
                 <label for="tipo">Tipo:</label>
                 <form id="fTipo">
@@ -95,7 +100,7 @@
                 <br><br>
                 <div id="Veraz" class="seccion activa">
                     <form>
-                        <input type="button" value="Enviar" onclick="rellenarTabla(), crearObjetoJSON()">
+                        <input type="button" value="Enviar" onclick="crearObjetoJSON()">
                     </form>
                 </div>
                 <div id="Desmentido" class="seccion">
@@ -103,7 +108,7 @@
                         <label for="fuentes">Fuente:</label>
                         <input type="text" name="fuentes" id="fuentes"/>
                         <br><br>
-                        <input type="button" value="Enviar" onclick="rellenarTabla()">
+                        <input type="button" value="Enviar" onclick="crearObjetoJSON()">
                     </form>
                 </div>
                 <div id="Bulo" class="seccion">
@@ -127,23 +132,5 @@
             
         </div>
         <br><br>
-        <div id="tabla">
-            <table>
-                <caption>Noticias:</caption>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Fecha</th>
-                        <th>Título</th>
-                        <th>Texto</th>
-                        <th>Audiencia</th>
-                        <th>Usuarios</th>
-                        <th>Menciones</th>
-                        <th>Ámbito</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody"></tbody>
-            </table>
-        </div>
     </body>
 </html>
