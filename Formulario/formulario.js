@@ -20,7 +20,11 @@ function mostrarSegunTipo(tipo){
 }
 
 function crearObjetoJSON(){
-    var idNoticia = id;
+    var idNoticia;
+    var not_rel;
+    var tipo_vinc;
+    let vinc;
+    var lista_vinc = [];
     var fecha = document.getElementById("fecha").value;
     var titulo = document.getElementById("titulo").value;
     var texto = document.getElementById("texto").value;
@@ -32,11 +36,15 @@ function crearObjetoJSON(){
     var formato = document.getElementById("formato").value;
     var autor = document.getElementById("autor").value;
     var cadenaMunicipios = document.getElementById("municipios").value;
-    var municipios = cadenaMunicipios.split(";");
-    var imagenes = document.getElementById("imagenes").value;
-    var idVinculos = document.getElementById("idVinculos").value;
-    var tipoVinculos = document.getElementById("tipoVinculos").value;
-    var agencias = document.getElementById("agencias").value;
+    var municipios = cadenaMunicipios.split("\n");
+    var cadenaImagenes = document.getElementById("imagenes").value;
+    var imagenes = cadenaImagenes.split("\n");
+    var cadenaVinculos = document.getElementById("vinculos").value;
+    var vinculos = cadenaVinculos.split("\n");
+    /*var idVinculos = document.getElementById("idVinculos").value;
+    var tipoVinculos = document.getElementById("tipoVinculos").value;*/
+    var cadenaAgencias = document.getElementById("agencias").value;
+    var agencias = cadenaAgencias.split("\n");
     var tipo = document.getElementById("tipo").value;
     var fuentes = document.getElementById("fuentes").value;
     var desmentidos = document.getElementById("desmentidos").value;
@@ -44,6 +52,26 @@ function crearObjetoJSON(){
     var naturaleza = document.getElementById("naturaleza").value;
     var medios_supl = document.getElementById("medios_supl").value;
 
+    for(var i=0; i<vinculos.length; i++){
+        var a = vinculos[i].split(";");
+        for(var j=0; j<a.length; j++){
+            not_rel = a[0];
+            tipo_vinc = a[1];
+        }
+        vinc = {
+            noticia_relacionada: not_rel,
+            tipo_vinculo: tipo_vinc
+        }
+        lista_vinc.push(vinc);
+        console.log(vinc);
+    }
+    console.log(a);
+    console.log(not_rel);
+    console.log(tipo_vinc);
+    
+
+    console.log(vinc);
+    console.log(lista_vinc);
     let noticia = {
         id: idNoticia,
         fecha: fecha,
@@ -58,7 +86,7 @@ function crearObjetoJSON(){
         autor: autor,
         municipios: municipios,
         imagenes: imagenes,
-        vinculos: tipoVinculos,
+        vinculos: lista_vinc,
         agencias: agencias,
         tipo: tipo,
         fuentes: fuentes,
@@ -69,14 +97,11 @@ function crearObjetoJSON(){
     };
 
 
-
-    id++;
     console.log(noticia);
     
     rest("post","/noticia/nueva",{nueva:noticia},function(status,noticia){
 
     })
-
 }
 
 function mas(elemento){

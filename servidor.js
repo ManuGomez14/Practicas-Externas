@@ -12,7 +12,27 @@ app.listen(3000, function () {
     console.log("Servidor de ejemplo en el puerto 3000");
 });
 
+/** app.post('/noticia/nueva', function (req, res){
 
+    var noticia = req.body.nueva;
+
+    var rawdata = fs.readFileSync('noticias.json');
+    var archivo = JSON.parse(rawdata);
+    console.log(archivo);
+
+    archivo[archivo.length()]={};
+    archivo[archivo.length()-1]=noticia;
+
+    console.log(archivo);
+    /**archivo2 = archivo.append(noticia);
+    console.log(archivo2);
+
+    let data = JSON.stringify(archivo, null, 2);
+    console.log(data);
+    fs.writeFileSync('noticias.json', data);
+}); */
+
+ 
 app.post('/noticia/nueva', function (req, res){
 
     var noticia = req.body.nueva;
