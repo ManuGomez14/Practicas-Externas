@@ -1,0 +1,9 @@
+caption, th, tr, thead, tbody, table, td {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center;
+}
+
+.seccion {display: none;}
+.activa {display: block;}

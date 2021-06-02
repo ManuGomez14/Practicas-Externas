@@ -5,63 +5,39 @@ var app = express();
 app.use(express.json());
 
 app.use(express.json({ strict: false }));
-app.use(express.static(__dirname + '/Formulario'))
+app.use("/noticia/formulario", express.static(__dirname + '/Formulario'))
+app.use("/noticia/ver", express.static(__dirname + '/Ver'))
 
 
 app.listen(3000, function () {
     console.log("Servidor de ejemplo en el puerto 3000");
 });
 
-/** app.post('/noticia/nueva', function (req, res){
-
+app.post('/noticia/nueva', function (req, res){
     var noticia = req.body.nueva;
-
     var rawdata = fs.readFileSync('noticias.json');
     var archivo = JSON.parse(rawdata);
-    console.log(archivo);
+    var ultimoID;
+    var nuevoID;
 
-    archivo[archivo.length()]={};
-    archivo[archivo.length()-1]=noticia;
-
-    console.log(archivo);
-    /**archivo2 = archivo.append(noticia);
-    console.log(archivo2);
+    if(archivo["noticias"].length > 0){
+        ultimoID = archivo["noticias"][archivo["noticias"].length-1].id;
+        nuevoID = ultimoID + 1;
+    }else{
+        ultimoID = 1;
+        nuevoID = 1;
+    }
+    
+    noticia.id = nuevoID;
+    
+    archivo["noticias"].push(noticia);
 
     let data = JSON.stringify(archivo, null, 2);
-    console.log(data);
     fs.writeFileSync('noticias.json', data);
-}); */
+}); 
 
- 
-app.post('/noticia/nueva', function (req, res){
-
-    var noticia = req.body.nueva;
-    console.log(noticia);
-
-    let data = JSON.stringify(noticia, null, 2);
-    console.log(data);
-    fs.appendFile('noticias.json', data, (err) => {
-        if(err) throw err;
-        console.log('Data written to file');
-    });
-
+app.get("/noticias", function(req,res){
+    var noticias = JSON.parse(fs.readFileSync('noticias.json'));
+    res.status(200).json(noticias);
+    return;
 });
-
-
-/** 
-function escribirNoticia(noticia){
-    let data = JSON.stringify(noticia);
-    fs.writeFileSync('noticias.json', data);
-};
-
-module.exports = escribirNoticia();
-
-
-app.post('/sample/put/data', function(req, res) {
-    console.log('receiving data ...');
-    console.log('body is ',req.body);
-    res.send(req.body);
-});
-localhos:3000/sample/put/data?id=0?nombre=872
-
-*/

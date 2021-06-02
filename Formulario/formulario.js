@@ -20,7 +20,7 @@ function mostrarSegunTipo(tipo){
 }
 
 function crearObjetoJSON(){
-    var idNoticia;
+    var idNoticia = 0;
     var not_rel;
     var tipo_vinc;
     let vinc;

@@ -1,506 +1,112 @@
 {
-  "id": 2,
-  "fecha": "2021-05-01T22:05",
-  "titular": "aa",
-  "texto": "bb",
-  "audiencia": "11",
-  "usuarios": "22",
-  "menciones": "33",
-  "ambito": "cc",
-  "tematica": "dd",
-  "formato": "ee",
-  "autor": "ff",
-  "municipios": "gg",
-  "imagenes": "hh",
-  "vinculos": "jj",
-  "agencias": "kk",
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}
-{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    ""
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    ""
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    ""
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    ""
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    "123;abc",
-    "456;def"
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    "123;abc",
-    "456;def"
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    "a",
-    "b",
-    "c"
-  ],
-  "imagenes": [
-    "1",
-    "2",
-    "3"
-  ],
-  "vinculos": [
-    "111;aaa",
-    "222;bbb"
-  ],
-  "agencias": [
-    "una",
-    "dos",
-    "tres"
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    "1;a",
-    "2;b"
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": [
-    "a;1",
-    "b;2"
-  ],
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": {
-    "noticia_relacionada": "b",
-    "tipo_vinculo": "2"
-  },
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": {
-    "noticia_relacionada": "b",
-    "tipo_vinculo": "2"
-  },
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": {
-    "noticia_relacionada": "2",
-    "tipo_vinculo": "b"
-  },
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "",
-  "titular": "",
-  "texto": "",
-  "audiencia": "",
-  "usuarios": "",
-  "menciones": "",
-  "ambito": "",
-  "tematica": "",
-  "formato": "",
-  "autor": "",
-  "municipios": [
-    ""
-  ],
-  "imagenes": [
-    ""
-  ],
-  "vinculos": {
-    "noticia_relacionada": "2",
-    "tipo_vinculo": "B"
-  },
-  "agencias": [
-    ""
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "2021-05-06T20:36",
-  "titular": "a",
-  "texto": "bbbbbbbbb",
-  "audiencia": "1",
-  "usuarios": "2",
-  "menciones": "3",
-  "ambito": "c",
-  "tematica": "d",
-  "formato": "e",
-  "autor": "f",
-  "municipios": [
-    "g",
-    "h",
-    "i"
-  ],
-  "imagenes": [
-    "j",
-    "k",
-    "l"
-  ],
-  "vinculos": [
+  "noticias": [
     {
-      "noticia_relacionada": "111",
-      "tipo_vinculo": "mmm"
+      "id": 1,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
     },
     {
-      "noticia_relacionada": "222",
-      "tipo_vinculo": "nnn"
+      "id": 2,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
     },
     {
-      "noticia_relacionada": "333",
-      "tipo_vinculo": "ñññ"
+      "id": 3,
+      "fecha": "2021-06-02T23:44",
+      "titular": "h",
+      "texto": "Hola mundo, ¿qué tal?",
+      "audiencia": "21",
+      "usuarios": "14",
+      "menciones": "17",
+      "ambito": "t",
+      "tematica": "t",
+      "formato": "f",
+      "autor": "M",
+      "municipios": [
+        "Rojales",
+        "Alicante"
+      ],
+      "imagenes": [
+        "img001",
+        "img002",
+        "img003"
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": "111",
+          "tipo_vinculo": "aaa"
+        },
+        {
+          "noticia_relacionada": "222",
+          "tipo_vinculo": "bbb"
+        }
+      ],
+      "agencias": [
+        "agencia001",
+        "agencia002"
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
     }
-  ],
-  "agencias": [
-    "o",
-    "p"
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
-}{
-  "fecha": "2021-05-06T20:36",
-  "titular": "a",
-  "texto": "bbbbbbbbb",
-  "audiencia": "1",
-  "usuarios": "2",
-  "menciones": "3",
-  "ambito": "c",
-  "tematica": "d",
-  "formato": "e",
-  "autor": "f",
-  "municipios": [
-    "g",
-    "h",
-    "i"
-  ],
-  "imagenes": [
-    "j",
-    "k",
-    "l"
-  ],
-  "vinculos": [
-    {
-      "noticia_relacionada": "111",
-      "tipo_vinculo": "mmm"
-    },
-    {
-      "noticia_relacionada": "222",
-      "tipo_vinculo": "nnn"
-    },
-    {
-      "noticia_relacionada": "333",
-      "tipo_vinculo": "ñññ"
-    }
-  ],
-  "agencias": [
-    "o",
-    "p"
-  ],
-  "tipo": "Veraz",
-  "fuentes": "",
-  "desmentidos": "",
-  "evidencias": "",
-  "naturaleza": "",
-  "medios_supl": ""
+  ]
 }
