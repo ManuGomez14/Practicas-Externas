@@ -68,7 +68,7 @@
     },
     {
       "id": 3,
-      "fecha": "2021-06-02T23:44",
+      "fecha": "2021-06-02",
       "titular": "h",
       "texto": "Hola mundo, ¿qué tal?",
       "audiencia": "21",
@@ -100,6 +100,237 @@
       "agencias": [
         "agencia001",
         "agencia002"
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 4,
+      "fecha": "",
+      "titular": "a",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 5,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 6,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 7,
+      "fecha": "",
+      "titular": "aabss",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 8,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 9,
+      "fecha": "",
+      "titular": "",
+      "texto": "",
+      "audiencia": "",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "zcdadc",
+      "formato": "dczdc",
+      "autor": "aadc",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
+      ],
+      "tipo": "Veraz",
+      "fuentes": "",
+      "desmentidos": "",
+      "evidencias": "",
+      "naturaleza": "",
+      "medios_supl": ""
+    },
+    {
+      "id": 10,
+      "fecha": "",
+      "titular": "dasfdss",
+      "texto": "",
+      "audiencia": "32",
+      "usuarios": "",
+      "menciones": "",
+      "ambito": "",
+      "tematica": "",
+      "formato": "",
+      "autor": "",
+      "municipios": [
+        ""
+      ],
+      "imagenes": [
+        ""
+      ],
+      "vinculos": [
+        {
+          "noticia_relacionada": ""
+        }
+      ],
+      "agencias": [
+        ""
       ],
       "tipo": "Veraz",
       "fuentes": "",

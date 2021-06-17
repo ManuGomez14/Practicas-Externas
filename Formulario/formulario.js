@@ -19,6 +19,10 @@ function mostrarSegunTipo(tipo){
     }
 }
 
+function aVerTodas(){
+    window.location.href = "http://localhost:3000/noticia/ver"
+}
+
 function crearObjetoJSON(){
     var idNoticia = 0;
     var not_rel;
@@ -102,7 +106,11 @@ function crearObjetoJSON(){
     rest("post","/noticia/nueva",{nueva:noticia},function(status,noticia){
 
     })
+
+    aVerTodas();
 }
+
+
 
 function mas(elemento){
     if(elemento=="municipios"){
@@ -122,3 +130,4 @@ function mas(elemento){
         masAgencias.innerHTML += "<br><label for='agencias2'>Agencias:</label><input type='text' name='agencias' id='agencias2'><br>";
     }
 }
+

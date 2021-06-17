@@ -5,8 +5,9 @@ var app = express();
 app.use(express.json());
 
 app.use(express.json({ strict: false }));
-app.use("/noticia/formulario", express.static(__dirname + '/Formulario'))
-app.use("/noticia/ver", express.static(__dirname + '/Ver'))
+app.use("/noticia/formulario", express.static(__dirname + '/Formulario'));
+app.use("/noticia/ver", express.static(__dirname + '/Ver'));
+app.use("/noticia/ver/modificar", express.static(__dirname + '/Ver/modificar.html'));
 
 
 app.listen(3000, function () {
@@ -34,6 +35,7 @@ app.post('/noticia/nueva', function (req, res){
 
     let data = JSON.stringify(archivo, null, 2);
     fs.writeFileSync('noticias.json', data);
+
 }); 
 
 app.get("/noticias", function(req,res){
@@ -41,3 +43,16 @@ app.get("/noticias", function(req,res){
     res.status(200).json(noticias);
     return;
 });
+
+app.get("/noticias/:id", function(req,res){
+    var id = req.params.id;
+    var noticias = JSON.parse(fs.readFileSync('noticias.json'));
+
+    for(var i=0; i<noticias.noticias.length; i++){
+        if(noticias.noticias[i].id == id){
+            res.status(200).json(noticias.noticias[i]);
+
+        }
+    }
+});
+

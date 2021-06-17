@@ -33,10 +33,10 @@
         <div id="formulario">
             <form action="javascript:crearObjetoJSON()">
                 <label for="fecha">Fecha:</label>
-                <input type="datetime-local" name="fecha" id="fecha">
+                <input type="date" name="fecha" id="fecha">
                 <br><br>
                 <label for="titulo">Título:</label>
-                <input type="text" name="titulo" id="titulo" pattern="[A-Za-z]">
+                <input type="text" name="titulo" id="titulo" pattern="[A-Za-z]+">
                 <br><br>
                 <label for="texto">Texto:</label>
                 <br>
@@ -52,10 +52,10 @@
                 <input type="number" name="menciones" id="menciones">
                 <br><br>
                 <label for="ambito">Ámbito:</label>
-                <input type="text" name="ambito" id="ambito" pattern="[A-Za-z]">
+                <input type="text" name="ambito" id="ambito" pattern="[A-Za-z]+">
                 <br><br>
                 <label for="tematica">Temática:</label>
-                <input type="text" name="tematica" id="tematica" pattern="[A-Za-z]">
+                <input type="text" name="tematica" id="tematica" pattern="[A-Za-z]+">
                 <!-- 
                 <select name="tematica" id="tematica">
                 <option value="id_tem1">Temática 1</option>
@@ -65,7 +65,7 @@
                 -->
                 <br><br>
                 <label for="formato">Formato:</label>
-                <input type="text" name="formato" id="formato" pattern="[A-Za-z]">
+                <input type="text" name="formato" id="formato" pattern="[A-Za-z]+">
                 <!-- 
                 <select name="formato" id="formato">
                 <option value="id_frmt1">Formato 1</option>
@@ -75,7 +75,7 @@
                 -->
                 <br><br>
                 <label for="autor">Autor:</label>
-                <input type="text" name="autor" id="autor" pattern="[A-Za-z]">
+                <input type="text" name="autor" id="autor" pattern="[A-Za-z]+">
                 <br><br>
                 <label for="municipios">Municipios:</label>
                 <br>
@@ -155,21 +155,21 @@
                 <div id="Veraz" class="seccion activa"></div>
                 <div id="Desmentido" class="seccion">
                     <label for="fuentes">Fuente:</label>
-                    <input type="text" name="fuentes" id="fuentes" pattern="[A-Za-z]"/>
+                    <input type="text" name="fuentes" id="fuentes" pattern="[A-Za-z]+"/>
                     <br><br>
                 </div>
                 <div id="Bulo" class="seccion">
                     <label for="desmentidos">Desmentidos:</label>
-                    <input type="text" name="desmentidos" id="desmentidos" pattern="[A-Za-z]">
+                    <input type="text" name="desmentidos" id="desmentidos" pattern="[A-Za-z]+">
                     <br><br>
                     <label for="evidencias">Evidencias:</label>
-                    <input type="text" name="evidencias" id="evidencias" pattern="[A-Za-z]">
+                    <input type="text" name="evidencias" id="evidencias" pattern="[A-Za-z]+">
                     <br><br>
                     <label for="naturaleza">Naturaleza:</label>
-                    <input type="text" name="naturaleza" id="naturaleza" pattern="[A-Za-z]">
+                    <input type="text" name="naturaleza" id="naturaleza" pattern="[A-Za-z]+">
                     <br><br>
                     <label for="medios_supl">Medios Suplementarios:</label>
-                    <input type="text" name="medios_supl" id="medios_supl" pattern="[A-Za-z]">
+                    <input type="text" name="medios_supl" id="medios_supl" pattern="[A-Za-z]+">
                     <br><br>
                 </div>
                 <input type="submit">
