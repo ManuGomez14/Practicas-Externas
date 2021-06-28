@@ -1,4 +1,4 @@
-var seccionActual = "Veraz";
+var seccionActual;
 var idGlobal;
 
 function verNoticias(){
@@ -48,7 +48,58 @@ function recogerID(){
     var formulario = document.getElementById("formulario");
 
     rest("get", "/noticias/"+id, function(status,datos){
+        //Compruebo sin inicializar seccionActual
+        var verazActiva = "";
+        var verazTrue = "";
+        var desmentidoActiva = "";
+        var desmentidoTrue = "";
+        var buloActiva = "";
+        var buloTrue = "";
+        var ordenarMunicipios = "";
+        var ordenarImagenes = "";
+        var ordenarAgencias = "";
+
+        if(datos.tipo == "Veraz"){
+            verazActiva = "activa";
+            seccionActual = "Veraz";
+            verazTrue = "selected = 'true'";
+
+        }
+        if(datos.tipo == "Desmentido"){
+            desmentidoActiva = "activa";
+            seccionActual = "Desmentido";
+            desmentidoTrue = "selected = 'true'";
+        }
+        if(datos.tipo == "Bulo"){
+            buloActiva = "activa";
+            seccionActual = "Bulo";
+            buloTrue = "selected = 'true'";
+        }
         
+        for(var i=0; i<datos.municipios.length; i++){
+            if(i==datos.municipios.length-1){
+                ordenarMunicipios += datos.municipios[i];
+            }else{
+                ordenarMunicipios += datos.municipios[i] + "\n";
+            }
+        }
+
+        for(var j=0; j<datos.imagenes.length; j++){
+            if(j==datos.imagenes.length-1){
+                ordenarImagenes += datos.imagenes[j];
+            }else{
+                ordenarImagenes += datos.imagenes[j] + "\n";
+            }
+        }
+
+        for(var k=0; k<datos.agencias.length; k++){
+            if(k==datos.agencias.length-1){
+                ordenarAgencias += datos.agencias[k];
+            }else{
+                ordenarAgencias += datos.agencias[k] + "\n";
+            }
+        }
+
         formulario.innerHTML = "<h1>Modificar noticias:</h1>"
         + "<p>Modifique aquí cualquiera de los datos de esta noticia: </p>"
         + "<form action='javascript:modificar()'>"
@@ -83,31 +134,31 @@ function recogerID(){
         + "<input type='text' name='autor' id='autor' pattern='[A-Za-z]+' value='" + datos.autor + "'>"
         + "<br><br>"
         + "<label for='municipios'>Municipios: </label>"
-        + "<br><textarea name='municipios' id='municipios' cols='60' rows='5' value='" + datos.municipios + "'>"+ datos.municipios + "</textarea>"
+        + "<br><textarea name='municipios' id='municipios' cols='60' rows='5' value=''>" + ordenarMunicipios + "</textarea>"
         + "<br><br>"
         + "<label for='imagenes'>Imágenes: </label>"
-        + "<br><textarea name='imagenes' id='imagenes' cols='60' rows='5' value='" + datos.imagenes + "'>" + datos.imagenes + "</textarea>"
+        + "<br><textarea name='imagenes' id='imagenes' cols='60' rows='5' value=''>" + ordenarImagenes + "</textarea>"
         + "<br><br>"
         + "<label for='vinculos'>Vinculos: </label>"
         + "<br><textarea name='vinculos' id='vinculos' cols='60' rows='5' value='" + datos.vinculos + "'>" + datos.vinculos + "</textarea>"
         + "<br><br>"
         + "<label for='agencias'>Agencias: </label>"
-        + "<br><textarea name='agencias' id='agencias' cols='60' rows='5' value='" + datos.agencias + "'>" + datos.agencias + "</textarea>"
+        + "<br><textarea name='agencias' id='agencias' cols='60' rows='5' value=''>" + ordenarAgencias + "</textarea>"
         + "<br><br>"
         + "<label for='tipo'>Tipo: </label>"
         + "<select name='tipo' id='tipo' onchange='mostrarSegunTipo(this.value)' class='form-select'>"
-        + "<option value='Veraz'>Veraz</option>"
-        + "<option value='Desmentido'>Desmentido</option>"
-        + "<option value='Bulo'>Bulo</option>"
+        + "<option value='Veraz'" + verazTrue + ">Veraz</option>"
+        + "<option value='Desmentido'" + desmentidoTrue + ">Desmentido</option>"
+        + "<option value='Bulo'" + buloTrue + ">Bulo</option>"
         + "</select>"
         + "<br><br>"
-        + "<div id='Veraz' class='seccion activa'></div>"
-        + "<div id='Desmentido' class='seccion'>"
+        + "<div id='Veraz' class='seccion " + verazActiva + "'></div>"
+        + "<div id='Desmentido' class='seccion " + desmentidoActiva + "'>"
         + "<label for='fuentes'>Fuente: </label>"
         + "<input type='text' name='fuentes' id='fuentes' pattern='[A-Za-z]+' value='" + datos.fuentes + "'>"
         + "<br><br>"
         + "</div>"
-        + "<div id='Bulo' class='seccion'>"
+        + "<div id='Bulo' class='seccion " + buloActiva + "'>"
         + "<label for='desmentidos'>Desmentidos: </label>"
         + "<input type='text' name='desmentidos' id='desmentidos' pattern='[A-Za-z]+' value='" + datos.desmentidos +"'>"
         + "<br><br>"
@@ -145,5 +196,63 @@ function mostrarSegunTipo(tipo){
 }
 
 function modificar(){
+    var fecha = document.getElementById("fecha").value;
+    var titulo = document.getElementById("titulo").value;
+    var texto = document.getElementById("texto").value;
+    var audiencia = document.getElementById("audiencia").value;
+    var usuarios = document.getElementById("usuarios").value;
+    var menciones = document.getElementById("menciones").value;
+    var ambito = document.getElementById("ambito").value;
+    var tematica = document.getElementById("tematica").value;
+    var formato = document.getElementById("formato").value;
+    var autor = document.getElementById("autor").value;
+    var cadenaMunicipios = document.getElementById("municipios").value;
+    var municipios = cadenaMunicipios.split("\n");
+    var cadenaImagenes = document.getElementById("imagenes").value;
+    var imagenes = cadenaImagenes.split("\n");
+    //FALTAN LOS VINCULOS
+    var cadenaAgencias = document.getElementById("agencias").value;
+    var agencias = cadenaAgencias.split("\n");
+    var tipo = document.getElementById("tipo").value;
+    var fuentes = document.getElementById("fuentes").value;
+    var desmentidos = document.getElementById("desmentidos").value;
+    var evidencias = document.getElementById("evidencias").value;
+    var naturaleza = document.getElementById("naturaleza").value;
+    var medios_supl = document.getElementById("medios_supl").value;
     console.log(idGlobal);
+
+    let noticia = {
+        id: idGlobal,
+        fecha: fecha,
+        titular: titulo,
+        texto: texto,
+        audiencia: audiencia,
+        usuarios: usuarios,
+        menciones: menciones,
+        ambito: ambito,
+        tematica: tematica,
+        formato: formato,
+        autor: autor,
+        municipios: municipios,
+        imagenes: imagenes,
+        //vinculos: lista_vinc,
+        agencias: agencias,
+        tipo: tipo,
+        fuentes: fuentes,
+        desmentidos: desmentidos,
+        evidencias: evidencias,
+        naturaleza: naturaleza,
+        medios_supl: medios_supl
+    };
+
+
+    console.log(noticia);
+
+    rest("post","/noticia/modificar",{nuevaNoticia:noticia}, function(status,nuevaNoticia){
+        if(status == 200){
+            alert("¡Noticia modificada con éxito!");
+            console.log(nuevaNoticia);
+        }
+    })
+    
 }

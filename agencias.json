@@ -1,0 +1,14 @@
+{
+    "agencias": [
+        {
+            "id": "id_agnc1",
+            "nombre": "Agencia 1",
+            "url": "https://www.agencia1.com"
+        },
+        {
+            "id": "id_agnc2",
+            "nombre": "Agencia 2",
+            "url": "https://www.agencia2.com"
+        }
+    ]
+}

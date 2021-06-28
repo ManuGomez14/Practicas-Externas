@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTORES</title>
+    <script src="autores.js"></script>
+    <script src="rest.js"></script>
+    <link rel="stylesheet" href="estilos.css" type="text/css" media="screen"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a href="#" class="navbar-brand">APP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Noticias
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/noticia/ver" class="dropdown-item">Ver Noticias</a>
+                        </li>
+                        <li>
+                            <a href="/noticia/formulario" class="dropdown-item">Añadir Noticia</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Agencias
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/agencias" class="dropdown-item">Ver Agencias</a>
+                        </li>
+                        <li>
+                            <a href="/agencias/formulario" class="dropdown-item">Añadir Agencia</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Autores
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/autores" class="dropdown-item">Ver Autores</a>
+                        </li>
+                        <li>
+                            <a href="/autores/formulario" class="dropdown-item">Añadir Autor</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Formatos
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/formatos" class="dropdown-item">Ver Formatos</a>
+                        </li>
+                        <li>
+                            <a href="/formatos/formulario" class="dropdown-item">Añadir Formato</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Medios
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/medios" class="dropdown-item">Ver Medios</a>
+                        </li>
+                        <li>
+                            <a href="/medios/formulario" class="dropdown-item">Añadir Medio</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Municipios
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/municipios" class="dropdown-item">Ver Municipios</a>
+                        </li>
+                        <li>
+                            <a href="/municipios/formulario" class="dropdown-item">Añadir Municipio</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Naturalezas
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/naturalezas" class="dropdown-item">Ver Naturalezas</a>
+                        </li>
+                        <li>
+                            <a href="/naturalezas/formulario" class="dropdown-item">Añadir Naturaleza</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Provincias
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/provincias" class="dropdown-item">Ver Provincias</a>
+                        </li>
+                        <li>
+                            <a href="/provincias/formulario" class="dropdown-item">Añadir Provincia</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Publicaciones
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/publicaciones" class="dropdown-item">Ver Publicaciones</a>
+                        </li>
+                        <li>
+                            <a href="/publicaciones/formulario" class="dropdown-item">Añadir Publicación</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Temáticas
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/tematicas" class="dropdown-item">Ver Temáticas</a>
+                        </li>
+                        <li>
+                            <a href="/tematicas/formulario" class="dropdown-item">Añadir Temática</a>
+                        </li>
+                    </ul>  
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Tipos de Difusón
+                    </a>   
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a href="/tiposDifusion" class="dropdown-item">Ver Tipos de Difusón</a>
+                        </li>
+                        <li>
+                            <a href="/tiposDifusion/formulario" class="dropdown-item">Añadir Tipo de Difusón</a>
+                        </li>
+                    </ul>  
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>

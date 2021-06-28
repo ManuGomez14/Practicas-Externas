@@ -1,22 +1,25 @@
 {
   "noticias": [
     {
-      "id": 1,
+      "id": "1",
       "fecha": "",
       "titular": "",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
+      "texto": "hola",
+      "audiencia": "1",
+      "usuarios": "2",
+      "menciones": "3",
       "ambito": "",
       "tematica": "",
       "formato": "",
       "autor": "",
       "municipios": [
-        ""
+        "Rojales",
+        "Alicante"
       ],
       "imagenes": [
-        ""
+        "img001",
+        "img002",
+        "img003"
       ],
       "vinculos": [
         {
@@ -299,12 +302,12 @@
       "agencias": [
         ""
       ],
-      "tipo": "Veraz",
+      "tipo": "Bulo",
       "fuentes": "",
       "desmentidos": "",
       "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
+      "naturaleza": "asd",
+      "medios_supl": "vfr"
     },
     {
       "id": 10,

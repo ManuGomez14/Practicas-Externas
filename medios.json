@@ -1,0 +1,14 @@
+{
+    "medios": [
+        {
+            "id": "id_med1",
+            "nombre": "Medio 1",
+            "url": "https://www.agencia1.com"
+        },
+        {
+            "id": "id_med2",
+            "nombre": "Medio 2",
+            "url": "https://www.agencia2.com"
+        }
+    ]
+}

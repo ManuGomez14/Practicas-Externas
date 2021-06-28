@@ -7,3 +7,7 @@ caption, th, tr, thead, tbody, table, td {
 
 .seccion {display: none;}
 .activa {display: block;}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}

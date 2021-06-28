@@ -1,0 +1,12 @@
+{
+    "autores": [
+        {
+            "id": "id_aut1",
+            "nombre": "Autor 1"
+        },
+        {
+            "id": "id_aut2",
+            "nombre": "Autor 2"
+        }
+    ]
+}

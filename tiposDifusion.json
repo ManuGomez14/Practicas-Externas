@@ -1,0 +1,14 @@
+{
+    "tiposDifusion": [
+        {
+            "id": "id_tipDif1",
+            "nombre": "Tipo Difusión 1",
+            "descripcion": "Este es el Tipo de Difusión 1"
+        },
+        {
+            "id": "id_tipDif2",
+            "nombre": "Tipo Difusión 2",
+            "descripcion": "Este es el Tipo de Difusión 2"
+        }
+    ]
+}

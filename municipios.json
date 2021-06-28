@@ -1,0 +1,20 @@
+{
+    "municipios": [
+        {
+            "id": "id_mun1",
+            "nombre": "Alicante",
+            "provincia": "id_prov1",
+            "poblacion": "0",
+            "hombres": "0",
+            "mujeres": "0"
+        },
+        {
+            "id": "id_mun2",
+            "nombre": "Rojales",
+            "provincia": "id_prov1",
+            "poblacion": "0",
+            "hombres": "0",
+            "mujeres": "0"
+        }
+    ]
+}

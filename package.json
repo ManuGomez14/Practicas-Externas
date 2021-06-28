@@ -4,6 +4,7 @@
   "description": "",
   "main": "servidor.js",
   "dependencies": {
+    "bootstrap": "^5.0.2",
     "express": "^4.17.1",
     "jquery": "^3.6.0",
     "lowdb": "^1.0.0",
