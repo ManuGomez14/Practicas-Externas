@@ -1,17 +1,22 @@
 {
-    "publicaciones": [
-        {
-            "id": "id_pub1",
-            "url": "https://www.publicacion.com",
-            "fuente": "id_med1",
-            "tipo": "id_tipDif1"
-        },
-        {
-            "id": "id_pub2",
-            "url": "https://www.publicacion2.com",
-            "fuente": "id_med2",
-            "tipo": "id_tipDif2"
-        }
-    ]
+  "publicaciones": [
+    {
+      "id": "id_pub1",
+      "url": "https://www.publicacion.com",
+      "fuente": "id_med1",
+      "tipo": "id_tipDif1"
+    },
+    {
+      "id": "id_pub2",
+      "url": "https://www.publicacion2.com",
+      "fuente": "id_med2",
+      "tipo": "id_tipDif2"
+    },
+    {
+      "id": "id_pub3",
+      "url": "www.url.com",
+      "fuente": "fuentee",
+      "tipo": "TIPO"
+    }
+  ]
 }
-

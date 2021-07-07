@@ -1,14 +1,24 @@
 {
-    "formatos": [
-        {
-            "id": "id_frmt1",
-            "nombre": "Formato 1",
-            "descripcion": "Esta es el Formato 1"
-        },
-        {
-            "id": "id_frmt2",
-            "nombre": "Formato 2",
-            "descripcion": "Esta es el Formato 2"
-        }
-    ]
+  "formatos": [
+    {
+      "id": "id_frmt1",
+      "nombre": "Formato 1",
+      "descripcion": "Esta es el Formato 1"
+    },
+    {
+      "id": "id_frmt2",
+      "nombre": "Formato 2",
+      "descripcion": "Esta es el Formato 2"
+    },
+    {
+      "id": "id_frmt3",
+      "nombre": "Formato",
+      "descripcion": "Esta es su descripcion"
+    },
+    {
+      "id": "id_frmt4",
+      "nombre": "Formato",
+      "descripcion": "aaaaa"
+    }
+  ]
 }

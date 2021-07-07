@@ -5,8 +5,16 @@ function verNoticias(){
     rest("get","/noticias", function(status,noticias){
         var verNoticias = document.getElementById("verNoticias");
         if(status==200){
+            var divVinc;
             for(var i=0; i<noticias.noticias.length; i++){
-                console.log(noticias.noticias[0].vinculos);
+                console.log(noticias.noticias[i].vinculos);
+                for(var j=0; j<noticias.noticias[i].vinculos.length; j++){
+                    console.log(noticias.noticias[i].vinculos[j]);
+                    console.log(noticias.noticias[i].vinculos[j].noticia_relacionada);
+                    console.log(noticias.noticias[i].vinculos[j].tipo_vinculo);
+                    divVinc = "Noticia relacionada: " + noticias.noticias[i].vinculos[j].noticia_relacionada + " Tipo del vínculo: " + noticias.noticias[i].vinculos[j].tipo_vinculo;
+                }
+
                 verNoticias.innerHTML += "<div id='noticia" + (i+1) + "'>"  
                 + "ID: " + noticias.noticias[i].id + "<br>"
                 + "Fecha: " + noticias.noticias[i].fecha + "<br>"
@@ -20,7 +28,8 @@ function verNoticias(){
                 + "Autor: " + noticias.noticias[i].autor + "<br>"
                 + "Municipios: " + noticias.noticias[i].municipios + "<br>"
                 + "Imágenes: " + noticias.noticias[i].imagenes + "<br>"
-                + "Vínculos: <br> Noticia relacionada: " + noticias.noticias[i].vinculos.noticia_relacionada + " Tipo del vínculo: " + noticias.noticias[i].tipo_vinculo + "<br>"
+                + "Vínculos: <br> Noticia relacionada: " + noticias.noticias[i].vinculos[0].noticia_relacionada + " Tipo del vínculo: " + noticias.noticias[i].vinculos[0].tipo_vinculo + "<br>"
+                + "Prueba: " + divVinc + "<br>"
                 + "Agencias: " + noticias.noticias[i].agencias + "<br>"
                 + "Tipo: " + noticias.noticias[i].tipo + "<br>"
                 + "Fuentes: " + noticias.noticias[i].fuentes + "<br>"
@@ -100,7 +109,7 @@ function recogerID(){
             }
         }
 
-        formulario.innerHTML = "<h1>Modificar noticias:</h1>"
+        formulario.innerHTML = "<h1>Modificar noticias</h1>"
         + "<p>Modifique aquí cualquiera de los datos de esta noticia: </p>"
         + "<form action='javascript:modificar()'>"
         + "<label for='fecha'>Fecha: </label>"
@@ -252,7 +261,7 @@ function modificar(){
         if(status == 200){
             alert("¡Noticia modificada con éxito!");
             console.log(nuevaNoticia);
-        }
-    })
+        };
+    });
     
 }

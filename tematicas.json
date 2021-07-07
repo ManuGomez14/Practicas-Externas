@@ -1,14 +1,19 @@
 {
-    "tematicas": [
-        {
-            "id": "id_tem1",
-            "nombre": "Temática 1",
-            "descripcion": "Esta es la Temática 1"
-        },
-        {
-            "id": "id_tem2",
-            "nombre": "Temática 2",
-            "descripcion": "Esta es la Temática 2"
-        }
-    ]
+  "tematicas": [
+    {
+      "id": "id_tem1",
+      "nombre": "Temática 1",
+      "descripcion": "Esta es la Temática 1"
+    },
+    {
+      "id": "id_tem2",
+      "nombre": "Temática 2",
+      "descripcion": "Esta es la Temática 2"
+    },
+    {
+      "id": "id_tem3",
+      "nombre": "tematica",
+      "descripcion": "esta es otra tematica"
+    }
+  ]
 }

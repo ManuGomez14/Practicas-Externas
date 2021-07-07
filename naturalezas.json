@@ -1,14 +1,19 @@
 {
-    "naturalezas": [
-        {
-            "id": "id_nat1",
-            "nombre": "Naturaleza 1",
-            "descripcion": "Esta es la naturaleza 1"
-        },
-        {
-            "id": "id_nat2",
-            "nombre": "Naturaleza 2",
-            "descripcion": "Esta es la naturaleza 2"
-        }
-    ]
+  "naturalezas": [
+    {
+      "id": "id_nat1",
+      "nombre": "Naturaleza 1",
+      "descripcion": "Esta es la naturaleza 1"
+    },
+    {
+      "id": "id_nat2",
+      "nombre": "Naturaleza 2",
+      "descripcion": "Esta es la naturaleza 2"
+    },
+    {
+      "id": "id_nat3",
+      "nombre": "Naturaleza",
+      "descripcion": "Esta es otra naturaleza"
+    }
+  ]
 }

@@ -4,42 +4,6 @@
       "id": "1",
       "fecha": "",
       "titular": "",
-      "texto": "hola",
-      "audiencia": "1",
-      "usuarios": "2",
-      "menciones": "3",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        "Rojales",
-        "Alicante"
-      ],
-      "imagenes": [
-        "img001",
-        "img002",
-        "img003"
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 2,
-      "fecha": "",
-      "titular": "",
       "texto": "",
       "audiencia": "",
       "usuarios": "",
@@ -70,17 +34,17 @@
       "medios_supl": ""
     },
     {
-      "id": 3,
-      "fecha": "2021-06-02",
-      "titular": "h",
-      "texto": "Hola mundo, ¿qué tal?",
-      "audiencia": "21",
-      "usuarios": "14",
-      "menciones": "17",
-      "ambito": "t",
-      "tematica": "t",
-      "formato": "f",
-      "autor": "M",
+      "id": "2",
+      "fecha": "2021-07-03",
+      "titular": "Titulo",
+      "texto": "Este es el texto de la noticia",
+      "audiencia": "12345",
+      "usuarios": "4321",
+      "menciones": "12324",
+      "ambito": "Television",
+      "tematica": "Tematica",
+      "formato": "Formato",
+      "autor": "Autor",
       "municipios": [
         "Rojales",
         "Alicante"
@@ -98,44 +62,17 @@
         {
           "noticia_relacionada": "222",
           "tipo_vinculo": "bbb"
-        }
-      ],
-      "agencias": [
-        "agencia001",
-        "agencia002"
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 4,
-      "fecha": "",
-      "titular": "a",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
+        },
         {
-          "noticia_relacionada": ""
+          "noticia_relacionada": "333",
+          "tipo_vinculo": "ccc"
         }
       ],
       "agencias": [
-        ""
+        "agencia1",
+        "agencia2",
+        "agencia3",
+        "agencia4"
       ],
       "tipo": "Veraz",
       "fuentes": "",
@@ -145,176 +82,11 @@
       "medios_supl": ""
     },
     {
-      "id": 5,
+      "id": 3,
       "fecha": "",
       "titular": "",
       "texto": "",
       "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 6,
-      "fecha": "",
-      "titular": "",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 7,
-      "fecha": "",
-      "titular": "aabss",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 8,
-      "fecha": "",
-      "titular": "",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": 9,
-      "fecha": "",
-      "titular": "",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "zcdadc",
-      "formato": "dczdc",
-      "autor": "aadc",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Bulo",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "asd",
-      "medios_supl": "vfr"
-    },
-    {
-      "id": 10,
-      "fecha": "",
-      "titular": "dasfdss",
-      "texto": "",
-      "audiencia": "32",
       "usuarios": "",
       "menciones": "",
       "ambito": "",

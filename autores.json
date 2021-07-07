@@ -1,12 +1,40 @@
 {
-    "autores": [
-        {
-            "id": "id_aut1",
-            "nombre": "Autor 1"
-        },
-        {
-            "id": "id_aut2",
-            "nombre": "Autor 2"
-        }
-    ]
+  "autores": [
+    {
+      "id": "id_aut1",
+      "nombre": "Autor 1"
+    },
+    {
+      "id": "id_aut2",
+      "nombre": "Autor 2"
+    },
+    {
+      "id": "id_aut3",
+      "nombre": "Manuel"
+    },
+    {
+      "id": "id_aut4",
+      "nombre": "Alfonso"
+    },
+    {
+      "id": "id_aut5",
+      "nombre": "Manuel"
+    },
+    {
+      "id": "id_aut6",
+      "nombre": "John"
+    },
+    {
+      "id": "id_aut7",
+      "nombre": "Manuel"
+    },
+    {
+      "id": "id_aut8",
+      "nombre": "Juan"
+    },
+    {
+      "id": "id_aut9",
+      "nombre": "Pepe"
+    }
+  ]
 }
