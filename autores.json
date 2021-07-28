@@ -1,40 +1,36 @@
 {
   "autores": [
     {
-      "id": "id_aut1",
+      "id": "1",
       "nombre": "Autor 1"
     },
     {
-      "id": "id_aut2",
+      "id": "2",
       "nombre": "Autor 2"
     },
     {
-      "id": "id_aut3",
+      "id": "3",
       "nombre": "Manuel"
     },
     {
-      "id": "id_aut4",
+      "id": "4",
       "nombre": "Alfonso"
     },
     {
-      "id": "id_aut5",
+      "id": "5",
       "nombre": "Manuel"
     },
     {
-      "id": "id_aut6",
+      "id": "6",
       "nombre": "John"
     },
     {
-      "id": "id_aut7",
-      "nombre": "Manuel"
+      "id": "8",
+      "nombre": "Juanjo"
     },
     {
-      "id": "id_aut8",
-      "nombre": "Juan"
-    },
-    {
-      "id": "id_aut9",
-      "nombre": "Pepe"
+      "id": 9,
+      "nombre": "Maria"
     }
   ]
 }

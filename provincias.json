@@ -1,15 +1,15 @@
 {
   "provincias": [
     {
-      "id": "id_prov2",
+      "id": "1",
       "nombre": "Región de Murcia"
     },
     {
-      "id": "id_prov3",
-      "nombre": "Valencia"
+      "id": "2",
+      "nombre": "León"
     },
     {
-      "id": "id_prov4",
+      "id": 3,
       "nombre": "Alicante"
     }
   ]

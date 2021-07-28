@@ -1,34 +1,9 @@
 {
   "agencias": [
     {
-      "id": "id_agnc1",
-      "nombre": "Agencia 1",
-      "url": "https://www.agencia1.com"
-    },
-    {
-      "id": "id_agnc2",
-      "nombre": "Agencia 2",
-      "url": "https://www.agencia2.com"
-    },
-    {
-      "id": "id_agnc3",
-      "nombre": "sa",
-      "url": ""
-    },
-    {
-      "id": "id_agnc4",
+      "id": 9,
       "nombre": "Agencia",
-      "url": "www.url.es"
-    },
-    {
-      "id": "id_agnc5",
-      "nombre": "",
-      "url": ""
-    },
-    {
-      "id": "id_agnc6",
-      "nombre": "",
-      "url": ""
+      "url": "www.url.com"
     }
   ]
 }

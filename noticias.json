@@ -2,39 +2,6 @@
   "noticias": [
     {
       "id": "1",
-      "fecha": "",
-      "titular": "",
-      "texto": "",
-      "audiencia": "",
-      "usuarios": "",
-      "menciones": "",
-      "ambito": "",
-      "tematica": "",
-      "formato": "",
-      "autor": "",
-      "municipios": [
-        ""
-      ],
-      "imagenes": [
-        ""
-      ],
-      "vinculos": [
-        {
-          "noticia_relacionada": ""
-        }
-      ],
-      "agencias": [
-        ""
-      ],
-      "tipo": "Veraz",
-      "fuentes": "",
-      "desmentidos": "",
-      "evidencias": "",
-      "naturaleza": "",
-      "medios_supl": ""
-    },
-    {
-      "id": "2",
       "fecha": "2021-07-03",
       "titular": "Titulo",
       "texto": "Este es el texto de la noticia",
@@ -82,7 +49,7 @@
       "medios_supl": ""
     },
     {
-      "id": 3,
+      "id": 2,
       "fecha": "",
       "titular": "",
       "texto": "",

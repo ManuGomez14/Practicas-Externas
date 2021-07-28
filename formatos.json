@@ -1,24 +1,24 @@
 {
   "formatos": [
     {
-      "id": "id_frmt1",
+      "id": "1",
       "nombre": "Formato 1",
       "descripcion": "Esta es el Formato 1"
     },
     {
-      "id": "id_frmt2",
+      "id": "2",
       "nombre": "Formato 2",
       "descripcion": "Esta es el Formato 2"
     },
     {
-      "id": "id_frmt3",
+      "id": 4,
       "nombre": "Formato",
-      "descripcion": "Esta es su descripcion"
+      "descripcion": "descripcion"
     },
     {
-      "id": "id_frmt4",
+      "id": 5,
       "nombre": "Formato",
-      "descripcion": "aaaaa"
+      "descripcion": "desc"
     }
   ]
 }

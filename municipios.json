@@ -1,7 +1,7 @@
 {
   "municipios": [
     {
-      "id": "id_mun1",
+      "id": "1",
       "nombre": "Alicante",
       "provincia": "id_prov1",
       "poblacion": "0",
@@ -9,20 +9,28 @@
       "mujeres": "0"
     },
     {
-      "id": "id_mun2",
-      "nombre": "Rojales",
-      "provincia": "id_prov1",
+      "id": "2",
+      "nombre": "Alicante",
+      "provincia": "Alicante",
       "poblacion": "0",
       "hombres": "0",
-      "mujeres": "0"
+      "mujeres": "12"
     },
     {
-      "id": "id_mun3",
+      "id": "3",
       "nombre": "Rafal",
       "provincia": "Alicante",
       "poblacion": "12324",
       "hombres": "6000",
       "mujeres": "6324"
+    },
+    {
+      "id": 4,
+      "nombre": "Guardamar",
+      "provincia": "3",
+      "poblacion": "13244",
+      "hombres": "13243",
+      "mujeres": "13243"
     }
   ]
 }
